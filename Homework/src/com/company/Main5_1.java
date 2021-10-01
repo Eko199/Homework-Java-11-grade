@@ -2,7 +2,7 @@ package com.company;
 import java.util.Scanner;
 
 public class Main5_1 {
-
+    //BucketCalculator
     public static void main(String[] args) {
         //1L - 30m^2  - $4
         //5L - 140m^2 - $15
