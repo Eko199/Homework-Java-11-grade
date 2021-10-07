@@ -6,6 +6,11 @@ public class Stock {
     private double previousClosingPrice;
     private double currentPrice;
 
+    Stock(String symbol, String name) {
+        this.symbol = symbol;
+        this.name = name;
+    }
+
     public String getSymbol() {
         return symbol;
     }
@@ -36,11 +41,6 @@ public class Stock {
 
     public void setCurrentPrice(double currentPrice) {
         this.currentPrice = currentPrice;
-    }
-
-    Stock(String symbol, String name) {
-        this.symbol = symbol;
-        this.name = name;
     }
 
     double getChangePercent() {
