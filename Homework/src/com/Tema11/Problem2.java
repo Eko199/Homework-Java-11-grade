@@ -1,7 +1,7 @@
 package com.Tema11;
 
 enum Suit {
-    SPADES, DIAMONDS, HEARTS, CLUBS
+    SPADES, DIAMONDS, HEARTS, CLUBS;
 }
 
 class Card {
@@ -31,6 +31,13 @@ class Card {
 }
 
 public class Problem2 {
+    static boolean isInArray(int index, int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == index) return true;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         Card[] deck = new Card[52];
         int x = 0;
@@ -43,7 +50,27 @@ public class Problem2 {
 
         int[] drawnIndexes = new int[4];
         for (int i = 0; i < 4; i++) {
-            
+            int index = (int) (Math.random() * 52);
+            while (isInArray(index, drawnIndexes)) index = (int) (Math.random() * 52);
+            drawnIndexes[i] = index;
+            String number;
+            switch (deck[index].getNumber()) {
+                case 11:
+                    number = "Ace";
+                    break;
+                case 12:
+                    number = "Jack";
+                    break;
+                case 13:
+                    number = "Queen";
+                    break;
+                case 14:
+                    number = "King";
+                    break;
+                default:
+                    number = "" + deck[index].getNumber();
+            }
+            System.out.println("Drawn card " + (i + 1) + ": " + number + " of " + deck[index].getSuit());
         }
     }
 }
