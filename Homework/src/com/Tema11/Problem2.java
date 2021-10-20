@@ -28,6 +28,21 @@ class Card {
     public void setSuit(Suit suit) {
         this.suit = suit;
     }
+
+    public String getValue() {
+        switch (number) {
+            case 11:
+                return "Ace";
+            case 12:
+                return "Jack";
+            case 13:
+                return "Queen";
+            case 14:
+                return "King";
+            default:
+               return "" + number;
+        }
+    }
 }
 
 public class Problem2 {
@@ -53,24 +68,7 @@ public class Problem2 {
             int index = (int) (Math.random() * 52);
             while (isInArray(index, drawnIndexes)) index = (int) (Math.random() * 52);
             drawnIndexes[i] = index;
-            String number;
-            switch (deck[index].getNumber()) {
-                case 11:
-                    number = "Ace";
-                    break;
-                case 12:
-                    number = "Jack";
-                    break;
-                case 13:
-                    number = "Queen";
-                    break;
-                case 14:
-                    number = "King";
-                    break;
-                default:
-                    number = "" + deck[index].getNumber();
-            }
-            System.out.println("Drawn card " + (i + 1) + ": " + number + " of " + deck[index].getSuit());
+            System.out.println("Drawn card " + (i + 1) + ": " + deck[index].getValue() + " of " + deck[index].getSuit());
         }
     }
 }
