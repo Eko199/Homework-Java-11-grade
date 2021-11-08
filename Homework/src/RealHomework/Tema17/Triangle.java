@@ -24,4 +24,17 @@ public class Triangle extends GeometricObject {
     public double getSide3() {
         return side3;
     }
+
+    public double getPerimeter() {
+        return side1 + side2 + side3;
+    }
+
+    public double getArea() {
+        double semiPerimeter = getPerimeter() / 2;
+        return Math.sqrt(semiPerimeter * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3));
+    }
+
+    public void printTriangle() {
+        System.out.println("Triangle: side1 = " + side1 + " side2 = " + side2 + " side3 = " + side3);
+    }
 }
