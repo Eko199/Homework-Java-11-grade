@@ -8,11 +8,12 @@ public class StopWatchTest {
     }
 
     public static void main(String[] args) throws Exception {
-        StopWatch stopWatch = new StopWatch();
-
         double[] arr = new double[100000];
         for (int i = 0; i < 100000; i++)
             arr[i] = Math.random() * 100000;
+
+        StopWatch stopWatch = new StopWatch();
+
         for (int i = 0; i < 100000; i++) {
             int minIndex = i;
             for (int j = i+1; j < 100000; j++) {
@@ -21,10 +22,11 @@ public class StopWatchTest {
             swap(arr, minIndex, i);
         }
 
+        stopWatch.stop();
+
         for (int i = 0; i < 100000; i++)
             System.out.println(arr[i]);
 
-        stopWatch.stop();
         System.out.println("The sorting took " + stopWatch.getElapsedTime() + " milliseconds.");
     }
 }

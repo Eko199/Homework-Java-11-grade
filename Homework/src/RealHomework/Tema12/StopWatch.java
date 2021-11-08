@@ -4,32 +4,32 @@ import java.time.LocalTime;
 import static java.time.temporal.ChronoUnit.MILLIS;
 
 public class StopWatch {
-    private LocalTime startTime;
-    private LocalTime endTime;
+    //private LocalTime startTime;
+    //private LocalTime endTime;
+    private long startTime = System.currentTimeMillis();
+    private long endTime = -1;
 
-    public StopWatch() {
-        startTime = LocalTime.now();
-    }
+    public StopWatch() {}
 
-    public LocalTime getStartTime() {
+    public long getStartTime() {
         return startTime;
     }
 
-    public LocalTime getEndTime() {
+    public long getEndTime() {
         return endTime;
     }
 
     public void start() {
-        startTime = LocalTime.now();
+        startTime = System.currentTimeMillis();
     }
 
     public void stop() {
-        endTime = LocalTime.now();
+        endTime = System.currentTimeMillis();
     }
 
     public long getElapsedTime() throws Exception {
-        if (endTime != null)
-            return MILLIS.between(startTime, endTime);
+        if (endTime != -1)
+            return endTime - startTime;
         else
             throw new Exception("The stopwatch hasn't stopped yet.");
     }
