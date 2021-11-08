@@ -1,6 +1,6 @@
 package RealHomework.Tema8;
 
-public class RectangleMethod {
+public class RectangleTest {
     public static void colorRectangles(Rectangle rect1, Rectangle rect2) {
         rect1.setColor((rect1.getPerimeter() > rect2.getPerimeter()) ? "yellow" : "green");
         rect2.setColor((rect1.getPerimeter() < rect2.getPerimeter()) ? "yellow" : "green");
