@@ -10,8 +10,8 @@ public class Problem2 {
         String ssn = sc.nextLine();
 
         if (ssn.matches("\\d{3}-\\d{2}-\\d{4}"))
-            System.out.println("Valid SSN.");
+            System.out.println("Valid SSN");
         else
-            System.out.println("Invalid SSN.");
+            System.out.println("Invalid SSN");
     }
 }
