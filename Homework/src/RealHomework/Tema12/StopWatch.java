@@ -1,11 +1,6 @@
 package RealHomework.Tema12;
 
-import java.time.LocalTime;
-import static java.time.temporal.ChronoUnit.MILLIS;
-
 public class StopWatch {
-    //private LocalTime startTime;
-    //private LocalTime endTime;
     private long startTime = System.currentTimeMillis();
     private long endTime = -1;
 
