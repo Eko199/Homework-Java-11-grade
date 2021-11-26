@@ -1,4 +1,4 @@
-package RealHomework.Tema18;
+package RealHomework.Tema18.Problem1;
 
 public class Person {
     private String name;
