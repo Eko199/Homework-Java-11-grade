@@ -1,7 +1,6 @@
 package RealHomework.Tema22.Problem1;
 
 public class BigDog extends Dog {
-
     public BigDog(String name) {
         super(name);
     }
