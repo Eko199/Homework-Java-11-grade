@@ -23,26 +23,30 @@ public class Complex implements Cloneable, Comparable {
         return b;
     }
 
-    public void add(Complex num) {
+    public Complex add(Complex num) {
         a += num.getRealPart();
         b += num.getImaginaryPart();
+        return this;
     }
 
-    public void substract(Complex num) {
+    public Complex substract(Complex num) {
         a -= num.getRealPart();
         b -= num.getImaginaryPart();
+        return this;
     }
 
-    public void multiply(Complex num) {
+    public Complex multiply(Complex num) {
         a = a * num.getImaginaryPart() - b * num.getImaginaryPart();
         b = b * num.getRealPart() + a * num.getImaginaryPart();
+        return this;
     }
 
-    public void divide(Complex num) {
+    public Complex divide(Complex num) {
         a = (a * num.getRealPart() + b * num.getImaginaryPart()) /
                 (Math.pow(num.getRealPart(), 2) + Math.pow(num.getImaginaryPart(), 2));
         b += (b * num.getRealPart() - a * num.getImaginaryPart()) /
                 (Math.pow(num.getRealPart(), 2) + Math.pow(num.getImaginaryPart(), 2));
+        return this;
     }
 
     public double abs() {
@@ -54,7 +58,7 @@ public class Complex implements Cloneable, Comparable {
         if (b == 0)
             return String.valueOf(a);
         else
-            return String.format("(%d + %di)", a, b);
+            return String.format("(%.2f + %.2fi)", a, b);
     }
 
     @Override
