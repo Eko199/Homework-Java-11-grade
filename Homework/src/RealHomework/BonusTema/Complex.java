@@ -1,6 +1,6 @@
 package RealHomework.BonusTema;
 
-public class Complex implements Cloneable, Comparable {
+public class Complex implements Cloneable, Comparable<Complex> {
     private double a = 0;
     private double b = 0;
 
@@ -29,7 +29,7 @@ public class Complex implements Cloneable, Comparable {
         return this;
     }
 
-    public Complex substract(Complex num) {
+    public Complex subtract(Complex num) {
         a -= num.getRealPart();
         b -= num.getImaginaryPart();
         return this;
@@ -62,16 +62,18 @@ public class Complex implements Cloneable, Comparable {
     }
 
     @Override
-    public int compareTo(Object o) {
-        if (o instanceof Complex num) {
-            if (abs() > num.abs())
-                return 1;
-            else if (abs() < num.abs())
-                return -1;
-            else
-                return 0;
-        } else {
-            return Integer.MIN_VALUE;
+    public int compareTo(Complex num) {
+        return Double.compare(abs(), num.abs());
+    }
+
+    @Override
+    public Complex clone() {
+        try {
+            Complex clone = (Complex) super.clone();
+            // TODO: copy mutable state here, so the clone can't change the internals of the original
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
         }
     }
 }

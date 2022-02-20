@@ -13,7 +13,7 @@ public class ComplexTest {
 
         System.out.printf("%s + %s = %s", num1.toString(), num2.toString(), num1.add(num2).toString());
         System.out.println();
-        System.out.printf("%s - %s = %s", num1.toString(), num2.toString(), num1.substract(num2).toString());
+        System.out.printf("%s - %s = %s", num1.toString(), num2.toString(), num1.subtract(num2).toString());
         System.out.println();
         System.out.printf("%s * %s = %s", num1.toString(), num2.toString(), num1.multiply(num2).toString());
         System.out.println();
