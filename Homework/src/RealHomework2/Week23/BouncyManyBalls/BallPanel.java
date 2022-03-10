@@ -14,7 +14,7 @@ class BallPanel extends JPanel {
 	protected Timer timer = new Timer(delay, new TimerListener());
 
 	private class TimerListener implements ActionListener {
-		@Override /** Handle the action event */
+		@Override /* Handle the action event */
 		public void actionPerformed(ActionEvent e) {
 			repaint();
 			if (list.size() >= 2) {
@@ -44,10 +44,17 @@ class BallPanel extends JPanel {
 
 	public BallPanel() {
 		timer.start();
+		addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				list.removeIf(ball -> distance(ball.x, ball.y, getMousePosition().x, getMousePosition().y) <= ball.radius);
+			}
+		});
 	}
 
 	public void add() {
-		list.add(new Ball());
+		list.add(new Ball((int) Math.round((Math.random() * 400)), (int) Math.round((Math.random() * 300)),
+				(int) Math.round(Math.random() * 8 - 4), (int) Math.round(Math.random() * 8 - 4)));
 	}
 
 	public void subtract() {

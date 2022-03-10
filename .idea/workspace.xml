@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="da82d251-869b-4594-a2a2-a5a2589f07a6" name="Changes" comment="" />
+    <list default="true" id="da82d251-869b-4594-a2a2-a5a2589f07a6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Week23/MyLinkedList/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Week23/MyLinkedList/TestMyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/src/RealHomework2/Week23/BouncyManyBalls/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Week23/BouncyManyBalls/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/src/RealHomework2/Week23/BouncyManyBalls/BallPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Week23/BouncyManyBalls/BallPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Repo/com/intellij/uiDesigner/core/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Repo/random/Stupid/Bravo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/random/Stupid/Bravo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Repo/random/Stupid/Stupid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/random/Stupid/Stupid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Repo/random/Stupid2/Stuidity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/random/Stupid2/Stuidity.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +31,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="24rbG5pSu2hRojIDS01BfxzuoDY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,14 +44,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="254" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Biblia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="random.Biblia" />
+  <component name="RunManager" selected="Application.TestMyLinkedList">
+    <configuration name="TestArrayAndLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RealHomework2.Week23.CollectionsExamples.TestArrayAndLinkedList" />
       <module name="Repo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="random.*" />
+          <option name="PATTERN" value="RealHomework2.Week23.CollectionsExamples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -42,12 +60,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComplexTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RealHomework.BonusTema.ComplexTest" />
+    <configuration name="TestCollection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RealHomework2.Week23.CollectionsExamples.TestCollection" />
       <module name="Repo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="RealHomework.BonusTema.*" />
+          <option name="PATTERN" value="RealHomework2.Week23.CollectionsExamples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -55,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="random.Stupid2.Main" />
+    <configuration name="TestIterator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RealHomework2.Week23.CollectionsExamples.TestIterator" />
       <module name="Repo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="random.Stupid2.*" />
+          <option name="PATTERN" value="RealHomework2.Week23.CollectionsExamples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +86,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="random.Stupid.Test" />
+    <configuration name="TestMyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RealHomework2.Week23.MyLinkedList.TestMyLinkedList" />
       <module name="Repo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="random.Stupid.*" />
+          <option name="PATTERN" value="RealHomework2.Week23.MyLinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStaticMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RealHomework2.Week23.CollectionsExamples.TestStaticMethods" />
+      <module name="Repo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RealHomework2.Week23.CollectionsExamples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,10 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Biblia" />
-        <item itemvalue="Application.ComplexTest" />
+        <item itemvalue="Application.TestMyLinkedList" />
+        <item itemvalue="Application.TestStaticMethods" />
+        <item itemvalue="Application.TestIterator" />
+        <item itemvalue="Application.TestCollection" />
+        <item itemvalue="Application.TestArrayAndLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -100,5 +132,16 @@
       <updated>1644391554362</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
