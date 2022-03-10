@@ -5,16 +5,15 @@ import java.util.ListIterator;
 public class MyLinkedList<E> {
 	private Node<E> head, tail;
 	private int size = 0;
-	
+
 	public MyLinkedList() {
 	}
-		 
+
 	public MyLinkedList(E[] objects) {
 		for (int i = 0; i < objects.length; i++)
 			addLast(objects[i]);
 	}
-		 
-	
+
 	public E getFirst() {
 		if (size == 0) {
 			return null;
@@ -23,29 +22,29 @@ public class MyLinkedList<E> {
 			return head.element;
 		}
 	}
-	
+
 	public E getLast() {
 		if (size == 0) {
 			return null;
-		} 
+		}
 		else {
 			return tail.element;
 		}
 	}
-	
+
 	public void addFirst(E e) {
 		Node<E> newNode = new Node<>(e);
 		newNode.next = head;
 		head = newNode;
 		size++;
-		
+
 		if (tail == null)
 			tail = head;
 	}
-	
+
 	public void addLast(E e) {
 		Node<E> newNode = new Node<>(e);
-		
+
 		if (tail == null) {
 			head = tail = newNode;
 		}
@@ -53,24 +52,25 @@ public class MyLinkedList<E> {
 			tail.next = newNode;
 			tail = newNode;
 		}
-		
+
 		size++;
 	}
-	
+
 	public void add(int index, E e) {
 		if (index == 0) addFirst(e);
 		else if (index >= size) addLast(e);
 		else {
 			Node<E> current = head;
-			for (int i = 1; i < index; i++)
+			for (int i = 1; i < index; i++) {
 				current = current.next;
+			}
 			Node<E> temp = current.next;
 			current.next = new Node<>(e);
 			(current.next).next = temp;
 			size++;
 		}
 	}
-	
+
 	public E removeFirst() {
 		if (size == 0) return null;
 		else {
@@ -81,21 +81,21 @@ public class MyLinkedList<E> {
 			return temp.element;
 		}
 	}
-	
+
 	public E removeLast() {
 		if (size == 0) return null;
-		else if (size == 1) { 
+		else if (size == 1) {
 			Node<E> temp = head;
-			head = tail = null; 
+			head = tail = null;
 			size = 0;
 			return temp.element;
 		}
 		else {
 			Node<E> current = head;
-		
+
 			for (int i = 0; i < size - 2; i++)
 				current = current.next;
-		
+
 			Node<E> temp = tail;
 			tail = current;
 			tail.next = null;
@@ -103,30 +103,30 @@ public class MyLinkedList<E> {
 			return temp.element;
 		}
 	}
-	
+
 	public E remove(int index) {
-		if (index < 0 || index >= size) return null; 
+		if (index < 0 || index >= size) return null;
 		else if (index == 0) return removeFirst();
 		else if (index == size - 1) return removeLast();
 		else {
 			Node<E> previous = head;
-		
+
 			for (int i = 1; i < index; i++) {
 				previous = previous.next;
 			}
-		
+
 			Node<E> current = previous.next;
 			previous.next = current.next;
 			size--;
-			
+
 			return current.element;
 		}
 	}
-	
+
 	@Override
 	public String toString() {
 		StringBuilder result = new StringBuilder("[");
-		
+
 		Node<E> current = head;
 		for (int i = 0; i < size; i++) {
 			result.append(current.element);
@@ -138,15 +138,15 @@ public class MyLinkedList<E> {
 				result.append("]");
 			}
 		}
-		
+
 		return result.toString();
 	}
-	
+
 	public void clear() {
 		size = 0;
 		head = tail = null;
 	}
-	
+
 	public boolean contains(Object e) {
 		// Left as an exercise
 		LinkedListIterator iter = new LinkedListIterator();
@@ -157,7 +157,7 @@ public class MyLinkedList<E> {
 
 		return false;
 	}
-	
+
 	public E get(int index) {
 		// Left as an exercise
 		LinkedListIterator iter = new LinkedListIterator();
@@ -169,7 +169,7 @@ public class MyLinkedList<E> {
 
 		return iter.next();
 	}
-	
+
 	public int indexOf(Object e) {
 		// Left as an exercise
 		int i = 0;
@@ -182,7 +182,7 @@ public class MyLinkedList<E> {
 
 		return i;
 	}
-	
+
 	public int lastIndexOf(E e) {
 		// Left as an exercise
 		int i = 0, j = -1;
@@ -195,54 +195,51 @@ public class MyLinkedList<E> {
 
 		return j;
 	}
-	
+
 	public E set(int index, E e) {
 		// Left as an exercise
-//		LinkedListIterator iter = new LinkedListIterator();
-//		for (int i = 0; i < index; i++) {
-//			if (!iter.hasNext())
-//				return null;
-//			iter.next();
-//		}
-//
-//		iter.next() = new Node<E>(e);
-//		return iter.next();
-		return null;
+		Node<E> current = head;
+		for (int i = 1; i < index; i++) {
+			current = current.next;
+		}
+		E temp = current.element;
+		current.element = e;
+		return temp;
 	}
-	
+
 	public java.util.Iterator<E> iterator() {
 		return new LinkedListIterator();
 	}
-	
+
 	private class LinkedListIterator implements java.util.Iterator<E> {
 		private Node<E> current = head;
-		
-		
+
+
 		public boolean hasNext() {
 			return (current != null);
 		}
-		
+
 		public E next() {
 			E e = current.element;
 			current = current.next;
 			return e;
-			
+
 		}
-	
+
 		public void remove() {
 			// Left as an exercise
 		}
 	}
-	
+
 	private static class Node<E> {
 		E element;
 		Node<E> next;
-		
+
 		public Node(E element) {
 			this.element = element;
 		}
 	}
-	
+
 	public int size() {
 		return size;
 	}
