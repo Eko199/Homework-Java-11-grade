@@ -52,6 +52,9 @@ public class TestMyLinkedList {
 		System.out.println(list.indexOf("Canada"));
 		System.out.println(list.indexOf("Poland"));
 
+		System.out.println(list.set(0, "Atmosphera"));
+		System.out.println(list.get(0));
+
 		list.clear();
 		System.out.println("After clearing the list, the list size is "+ list.size());
 
