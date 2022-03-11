@@ -40,30 +40,27 @@ public class SchoolMemberFrame extends JFrame {
             teacher = false;
         });
 
-        addButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    SchoolMember member;
-                    String[] arr = Arrays.stream(textField4.getText().split("[, ]")).filter(x -> !x.equals("")).toArray(String[]::new);
-                    //String[] arr = textField4.getText().split("\s*,*\s");
-                    if (teacher) {
-                        member = new Teacher(textField1.getText(), textField2.getText(),
-                                Integer.parseInt(textField3.getText()), arr);
-                    } else {
-                        member = new Administrator(textField1.getText(), textField2.getText(),
-                                Double.parseDouble(textField3.getText()), arr);
-                    }
-                    list.add(member);
-                } catch (Exception exception) {
-                    JOptionPane.showMessageDialog(addButton, "Invalid input.");
+        addButton.addActionListener(e -> {
+            try {
+                SchoolMember member;
+                String[] arr = Arrays.stream(textField4.getText().split("[, ]")).filter(x -> !x.equals("")).toArray(String[]::new);
+                //String[] arr = textField4.getText().split("\s*,*\s");
+                if (teacher) {
+                    member = new Teacher(textField1.getText(), textField2.getText(),
+                            Integer.parseInt(textField3.getText()), arr);
+                } else {
+                    member = new Administrator(textField1.getText(), textField2.getText(),
+                            Double.parseDouble(textField3.getText()), arr);
                 }
-                textField1.setText("");
-                textField2.setText("");
-                textField3.setText("");
-                textField4.setText("");
-                showList();
+                list.add(member);
+            } catch (Exception exception) {
+                JOptionPane.showMessageDialog(addButton, "Invalid input.");
             }
+            textField1.setText("");
+            textField2.setText("");
+            textField3.setText("");
+            textField4.setText("");
+            showList();
         });
 
         showListButton.addActionListener(e -> showList());

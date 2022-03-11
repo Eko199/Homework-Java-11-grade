@@ -228,6 +228,25 @@ public class MyLinkedList<E> {
 
 		public void remove() {
 			// Left as an exercise
+			if (size == 1) {
+				clear();
+				current = null;
+			} else if (size > 1) {
+				if (current == head) {
+					removeFirst();
+					current = head;
+					return;
+				} else if (current == tail) {
+					removeLast();
+					current = tail;
+					return;
+				}
+				Node<E> previous = head;
+				while (previous.next != current) {
+					previous = previous.next;
+				}
+				current = previous.next = current.next;
+			}
 		}
 	}
 
