@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da82d251-869b-4594-a2a2-a5a2589f07a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Week23/MyLinkedList/MyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Week23/MyLinkedList/TestMyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/Administrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMemberFrame.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMemberFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/TestSchoolMember.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/src/RealHomework2/Week23/BouncyManyBalls/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Week23/BouncyManyBalls/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/src/RealHomework2/Week23/BouncyManyBalls/BallPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Week23/BouncyManyBalls/BallPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Repo/com/intellij/uiDesigner/core/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Repo/random/Stupid/Bravo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/random/Stupid/Bravo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Repo/random/Stupid/Stupid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/random/Stupid/Stupid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Repo/random/Stupid2/Stuidity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/random/Stupid2/Stuidity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList$LinkedListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList$LinkedListIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,26 +46,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.TestMyLinkedList">
-    <configuration name="TestArrayAndLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RealHomework2.Week23.CollectionsExamples.TestArrayAndLinkedList" />
+  <component name="RunManager" selected="Application.SchoolMemberFrame">
+    <configuration name="SchoolMemberFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RealHomework2.Test1.SchoolMemberFrame" />
       <module name="Repo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="RealHomework2.Week23.CollectionsExamples.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCollection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RealHomework2.Week23.CollectionsExamples.TestCollection" />
-      <module name="Repo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RealHomework2.Week23.CollectionsExamples.*" />
+          <option name="PATTERN" value="RealHomework2.Test1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,6 +86,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSchoolMember" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RealHomework2.Test1.TestSchoolMember" />
+      <module name="Repo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RealHomework2.Test1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestStaticMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RealHomework2.Week23.CollectionsExamples.TestStaticMethods" />
       <module name="Repo" />
@@ -114,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SchoolMemberFrame" />
+        <item itemvalue="Application.TestSchoolMember" />
         <item itemvalue="Application.TestMyLinkedList" />
         <item itemvalue="Application.TestStaticMethods" />
         <item itemvalue="Application.TestIterator" />
-        <item itemvalue="Application.TestCollection" />
-        <item itemvalue="Application.TestArrayAndLinkedList" />
       </list>
     </recent_temporary>
   </component>
