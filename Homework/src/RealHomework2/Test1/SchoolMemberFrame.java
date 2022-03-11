@@ -3,6 +3,7 @@ package RealHomework2.Test1;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public class SchoolMemberFrame extends JFrame {
@@ -16,41 +17,56 @@ public class SchoolMemberFrame extends JFrame {
     private JTextArea textArea1;
     private JPanel mainPanel;
     private JLabel label1;
+    private JButton showListButton;
+    private JTextField textField4;
+    private JLabel label2;
     private ButtonGroup buttonGroup = new ButtonGroup();
     private LinkedList<SchoolMember> list = new LinkedList<>();
     private boolean teacher = true;
 
     public SchoolMemberFrame() {
+        super("List of School Members");
         textArea1.setEditable(false);
 
         teacherRadioButton.addActionListener(e -> {
             label1.setText("Months Internship: ");
+            label2.setText("Subjects: ");
             teacher = true;
         });
 
         administratorRadioButton.addActionListener(e -> {
             label1.setText("Monthly Salary: ");
+            label2.setText("Tasks: ");
             teacher = false;
         });
 
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                SchoolMember member;
-                if (teacher) {
-                    member = new Teacher(textField1.getText(), textField2.getText(),
-                            Integer.parseInt(textField3.getText()));
-                } else {
-                    member = new Administrator(textField1.getText(), textField2.getText(),
-                            Double.parseDouble(textField3.getText()));
+                try {
+                    SchoolMember member;
+                    String[] arr = Arrays.stream(textField4.getText().split("[, ]")).filter(x -> !x.equals("")).toArray(String[]::new);
+                    //String[] arr = textField4.getText().split("\s*,*\s");
+                    if (teacher) {
+                        member = new Teacher(textField1.getText(), textField2.getText(),
+                                Integer.parseInt(textField3.getText()), arr);
+                    } else {
+                        member = new Administrator(textField1.getText(), textField2.getText(),
+                                Double.parseDouble(textField3.getText()), arr);
+                    }
+                    list.add(member);
+                } catch (Exception exception) {
+                    JOptionPane.showMessageDialog(addButton, "Invalid input.");
                 }
-                list.add(member);
                 textField1.setText("");
                 textField2.setText("");
                 textField3.setText("");
+                textField4.setText("");
                 showList();
             }
         });
+
+        showListButton.addActionListener(e -> showList());
 
         showScoreButton.addActionListener(e -> textArea1.setText(String.valueOf(SchoolMember.sumScore(list))));
 

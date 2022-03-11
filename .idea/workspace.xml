@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da82d251-869b-4594-a2a2-a5a2589f07a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/Administrator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMemberFrame.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMemberFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/TestSchoolMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMemberFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMemberFrame.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMemberFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMemberFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Test1/SchoolMemberFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Test1/SchoolMemberFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Test1/SchoolMemberFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Test1/SchoolMemberFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList$LinkedListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList$LinkedListIterator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList$Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList.class" afterDir="false" />
