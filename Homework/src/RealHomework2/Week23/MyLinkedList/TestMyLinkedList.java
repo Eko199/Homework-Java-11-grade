@@ -49,10 +49,15 @@ public class TestMyLinkedList {
 		System.out.println(list.get(2));
 		System.out.println(list.get(10));
 
-		System.out.println(list.indexOf("Canada"));
-		System.out.println(list.indexOf("Poland"));
+		System.out.println(list.set(0, "France"));
+		System.out.println(list.get(0));
 
-		System.out.println(list.set(0, "Atmosphera"));
+		System.out.println(list.indexOf("France"));
+		System.out.println(list.lastIndexOf("France"));
+
+		iter = list.iterator();
+		iter.remove();
+		iter.remove();
 		System.out.println(list.get(0));
 
 		list.clear();
