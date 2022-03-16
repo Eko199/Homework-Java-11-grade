@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da82d251-869b-4594-a2a2-a5a2589f07a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Kontrolno/Bicycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Kontrolno/Building.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Kontrolno/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Kontrolno/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMemberFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMemberFrame.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMemberFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/src/RealHomework2/Test1/SchoolMemberFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Test1/SchoolMemberFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Test1/SchoolMemberFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Test1/SchoolMemberFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Test1/SchoolMemberFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList$LinkedListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList$LinkedListIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Repo/RealHomework2/Week23/MyLinkedList/MyLinkedList.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -42,10 +41,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="254" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SUSolitaire" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.SchoolMemberFrame">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="SchoolMemberFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RealHomework2.Test1.SchoolMemberFrame" />
       <module name="Repo" />
@@ -59,12 +58,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestIterator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RealHomework2.Week23.CollectionsExamples.TestIterator" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RealHomework2.Kontrolno.Test" />
       <module name="Repo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="RealHomework2.Week23.CollectionsExamples.*" />
+          <option name="PATTERN" value="RealHomework2.Kontrolno.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.SchoolMemberFrame" />
         <item itemvalue="Application.TestSchoolMember" />
         <item itemvalue="Application.TestMyLinkedList" />
         <item itemvalue="Application.TestStaticMethods" />
-        <item itemvalue="Application.TestIterator" />
       </list>
     </recent_temporary>
   </component>
