@@ -1,12 +1,22 @@
-package sets;
+package RealHomework2.Week26.Sets;
 
 import java.util.*;
 
 public class TestHashSet {
 
 	public static void main(String[] args) {
-		Set<String> set = new HashSet<>();
-		
+		Set<String> set = new HashSet<>();// new
+		new ArrayList<>();
+
+		/* new */ new ArrayList<>();
+		int /*asdf*/ a;
+		int //asdf
+				b;
+		/*asdasdasd*//*asdasdasd*/ new ArrayList<>(List.of(" break //")); new ArrayList<>();
+
+		//"
+        new ArrayList<>();
+
 		set.add("London");
 		set.add("Paris");
 		set.add("New York");
@@ -17,7 +27,7 @@ public class TestHashSet {
 		
 		System.out.println(set);
 		
-		for(String s: set) {
+		for (String s: set) {
 			System.out.print(s.toUpperCase() + " ");
 		}
 	}

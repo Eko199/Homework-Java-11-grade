@@ -55,9 +55,9 @@ public class Tony extends JFrame {
     public void wrongOpinion() {
         Random random = new Random();
         no.setText("No (wrong)");
-        no.setBounds(random.nextInt(600) + 10, random.nextInt(250) + 250, 200, 69);
-        while (no.getBounds().intersects(yes.getBounds()) || no.getBounds().contains(getMousePosition()))
+        do
             no.setBounds(random.nextInt(600) + 10, random.nextInt(250) + 250, 200, 69);
+        while (no.getBounds().intersects(yes.getBounds()) || no.getBounds().contains(getMousePosition()));
     }
 
     public Tony() {

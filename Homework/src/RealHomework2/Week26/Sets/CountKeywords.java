@@ -1,11 +1,11 @@
-package sets;
+package RealHomework2.Week26.Sets;
 
 import java.util.*;
 import java.io.*;
 
 public class CountKeywords {
 	public static void main(String[] args) throws Exception {
-		File file = new File("src/sets/TestHashSet.java");
+		File file = new File("src/RealHomework2/Week26/Sets/TestHashSet.java");
 		if (file.exists()) {
 			System.out.println("The number of keywords is " + countKeywords(file));
 		} else {
@@ -22,13 +22,37 @@ public class CountKeywords {
 				"new", "package", "private", "protected", "public", "return", "short", "static", "strictfp", "super",
 				"switch", "synchronized", "this", "throw", "throws", "transient", "try", "void", "volatile", "while",
 				"true", "false", "null" };
-		Set<String> keywordSet = new HashSet<String>(Arrays.asList(keywordString));
+		Set<String> keywordSet = new HashSet<>(Arrays.asList(keywordString));
 		int count = 0;
+		int flag = -1;
 
 		Scanner input = new Scanner(file);
 		while (input.hasNext()) {
 			String word = input.next();
-			if (keywordSet.contains(word))
+
+			while (word.contains("/*") || (word.contains("*/") && flag == 0)) {
+				if (word.contains("/*")) {
+					word = word.replaceFirst("\\w*/\\*", "");
+					flag = 0;
+				}
+
+				if (word.contains("*/") && flag == 0) {
+					word = word.replaceFirst("\\w*\\*/", "");
+					flag = -1;
+				}
+			}
+
+			if (word.contains("//") && flag == -1) {
+				input.nextLine();
+				continue;
+			}
+
+			while (word.contains("\"") && flag != 0) {
+				word = word.replaceFirst("\\w*\"", "");
+				flag = (flag == 1) ? -1 : 1;
+			}
+
+			if (keywordSet.contains(word) && flag == -1)
 				count++;
 		}
 		input.close();
