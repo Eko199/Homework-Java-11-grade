@@ -1,4 +1,4 @@
-package maps;
+package RealHomework2.Week26.Maps;
 
 import java.util.*;
 
@@ -8,10 +8,11 @@ public class CountOccurrenceOfWords {
 		String text = "Good morning. Have a good class. " + "Have a good visit. Have fun!";
 		
 		// Create a TreeMap to hold words as key and count as value
-		Map<String, Integer> map = new TreeMap<String, Integer>();
+		Map<String, Integer> map = new TreeMap<>();
+
 		String[] words = text.split("[\\s+\\p{P}]");  // The text is split into words using a whitespace \s or punctuation \p{P} as a delimiter
-		for (int i = 0; i < words.length; i++) {
-			String key = words[i].toLowerCase();
+		for (String word : words) {
+			String key = word.toLowerCase();
 			if (key.length() > 0) {
 				if (!map.containsKey(key)) {
 					map.put(key, 1);
@@ -22,9 +23,14 @@ public class CountOccurrenceOfWords {
 				}
 			}
 		}
+
+		Map<String, Integer> sortedByValuesMap = new TreeMap<>((o1, o2) ->
+				(Objects.equals(map.get(o1), map.get(o2))) ? 1 : Integer.compare(map.get(o1), map.get(o2)));
+
+		sortedByValuesMap.putAll(map);
 		
 		// Get all entries into a set
-		Set<Map.Entry<String, Integer>> entrySet = map.entrySet();
+		Set<Map.Entry<String, Integer>> entrySet = sortedByValuesMap.entrySet();
 		
 		// Get key and value from each entry
 		for (Map.Entry<String, Integer> entry : entrySet)
