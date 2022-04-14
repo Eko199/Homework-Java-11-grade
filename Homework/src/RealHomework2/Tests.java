@@ -23,6 +23,11 @@ class E extends B {}
 
 public class Tests {
     public static void main(String[] args) {
+        Double[] myArr = new Double[3];
+        myArr[0] = 1.25;
+        double myDouble = myArr[0];
+
+
         String s1 ="ABC";
         String s2 = new String("ABC");
         String s3 = "AB" + "C";
