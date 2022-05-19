@@ -1,6 +1,6 @@
 1
 The Adam Project
-2022 116000000
+2022 116000000.00
 2
 Avatar: The Last Airbender
-2005 150000000 Aang
+2005 150000000.00 Aang

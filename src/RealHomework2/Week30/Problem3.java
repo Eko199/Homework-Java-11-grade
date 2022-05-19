@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Problem3 {
     public static void main(String[] args) throws FileNotFoundException {
-        try (Scanner scanner = new Scanner(new File("Homework\\src\\RealHomework2\\Week30\\Salary.txt"))) {
+        try (Scanner scanner = new Scanner(new File("src\\RealHomework2\\Week30\\Salary.txt"))) {
             double assistantSalary = 0, associateSalary = 0, fullSalary = 0, facultySalary = 0;
             int assistantCount = 0, associateCount = 0, fullCount = 0, facultyCount = 0;
 

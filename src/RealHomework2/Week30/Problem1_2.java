@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Problem1_2 {
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("Homework\\src\\RealHomework2\\Week30\\names.txt");
+        File file = new File("src\\RealHomework2\\Week30\\names.txt");
         writeInFile("Blago", file);
         System.out.println(readInFile("Viktor", file));
     }

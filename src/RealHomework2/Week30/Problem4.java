@@ -11,7 +11,7 @@ public class Problem4 {
         int year = Integer.parseInt(consoleInput.next());
 
         try (Scanner scanner = new Scanner(new File(
-                "Homework\\src\\RealHomework2\\Week30\\babynamesranking"+ year +".txt"))) {
+                "src\\RealHomework2\\Week30\\babynamesranking"+ year +".txt"))) {
             System.out.print("Enter the gender: ");
             char gender = consoleInput.next().toLowerCase().charAt(0);
 

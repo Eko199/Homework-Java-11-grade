@@ -12,7 +12,7 @@ public class Problem5 {
         System.out.println("----------------------------------------------------------------------------------------------------------------------------");
         for (int year = 2010; year >= 2001; year--) {
             try (Scanner scanner = new Scanner(new File(
-                    "Homework\\src\\RealHomework2\\Week30\\babynamesranking"+ year +".txt"))) {
+                    "src\\RealHomework2\\Week30\\babynamesranking"+ year +".txt"))) {
                 ArrayList<String> topMaleNames = new ArrayList<>();
                 ArrayList<String> topFemaleNames = new ArrayList<>();
                 for (int i = 0; i < 10; i++) {

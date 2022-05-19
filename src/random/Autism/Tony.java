@@ -1,4 +1,4 @@
-package random.Tony;
+package random.Autism;
 
 import javax.swing.*;
 import java.awt.*;
