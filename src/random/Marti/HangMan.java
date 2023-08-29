@@ -7,6 +7,8 @@ import java.awt.event.*;
 import java.io.*;
 import java.util.*;
 
+//THIS IS NOT MY WORK!
+
 public class HangMan extends JFrame {
 	private static File wordBank = new File("src/random/Marti/words.txt");
 	private final int MAX_STRIKES = 9;

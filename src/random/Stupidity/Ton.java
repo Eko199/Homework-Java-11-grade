@@ -1,4 +1,4 @@
-package random.Autism;
+package random.Stupidity;
 
 import javax.swing.*;
 import java.awt.*;
@@ -43,13 +43,13 @@ import java.util.Random;
 
 
 
-public class Tony extends JFrame {
+public class Ton extends JFrame {
     JLabel text;
     JButton yes;
     JButton no;
 
     public static void main(String[] args) {
-        JFrame tony = new Tony();
+        JFrame tony = new Ton();
     }
 
     public void wrongOpinion() {
@@ -60,7 +60,7 @@ public class Tony extends JFrame {
         while (no.getBounds().intersects(yes.getBounds()) || no.getBounds().contains(getMousePosition()));
     }
 
-    public Tony() {
+    public Ton() {
         //NEVER
         super("Tony :)");
         setLayout(null);
